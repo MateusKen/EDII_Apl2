@@ -1,3 +1,4 @@
+
 public class programaNetflix {
 
 	private String id;
@@ -34,7 +35,7 @@ public class programaNetflix {
 		tmdb_score = 0;
 	}
 	
-	public programaNetflix(String id, String titulo, String show_type, int release_year, String age_certification, float runtime, String[] generos, String[] production_countries, float temporadas, String imdb_id, float imdb_score, float imdb_votes, float tmdb_popularity, float tmdb_score ) {
+	public programaNetflix(String id, String titulo, String show_type, String descricao, int release_year, String age_certification, float runtime, String[] generos, String[] production_countries, float temporadas, String imdb_id, float imdb_score, float imdb_votes, float tmdb_popularity, float tmdb_score ) {
 		this.id = id;
 		this.titulo = titulo;
 		this.show_type = show_type;
