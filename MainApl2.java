@@ -24,7 +24,7 @@ public class MainApl2{
             String[] data = line.split(",");
 
             // Criar uma instância de ProgramaNetflix com os dados da linha
-            programaNetflix programa = createProgramaNetflix(data);
+            ProgramaNetflix programa = createProgramaNetflix(data);
 
             // Verificar se todos os atributos foram preenchidos antes de inserir nas árvores
             if (programa != null) {
@@ -54,7 +54,7 @@ public class MainApl2{
     }
 }
 
-private static programaNetflix createProgramaNetflix(String[] data) {
+private static ProgramaNetflix createProgramaNetflix(String[] data) {
     // Verificar se há dados suficientes para criar uma instância de ProgramaNetflix
     if (data.length >= 15) {
     	//Verificar se o id está no formato esperado (ts ou tm seguido por numeros)
@@ -119,7 +119,7 @@ private static programaNetflix createProgramaNetflix(String[] data) {
         }
         
         // Criar uma instância de ProgramaNetflix com os dados
-        return new programaNetflix(
+        return new ProgramaNetflix(
                 data[0], data[1], data[2], data[3], Integer.parseInt(data[4]),
                 data[5], Float.parseFloat(data[6]), data[7].split(";"),
                 data[8].split(";"), Float.parseFloat(data[9]), data[10],
