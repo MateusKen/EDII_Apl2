@@ -1,5 +1,5 @@
 
-public class programaNetflix {
+public class ProgramaNetflix {
 
 	private String id;
 	private String titulo;
@@ -17,7 +17,7 @@ public class programaNetflix {
 	private float tmdb_popularity;
 	private float tmdb_score;
 
-	public programaNetflix() {
+	public ProgramaNetflix() {
 		id = "no-id";
 		titulo = "no-titulo";
 		show_type = "no-show_type";
@@ -35,7 +35,7 @@ public class programaNetflix {
 		tmdb_score = 0;
 	}
 	
-	public programaNetflix(String id, String titulo, String show_type, String descricao, int release_year, String age_certification, float runtime, String[] generos, String[] production_countries, float temporadas, String imdb_id, float imdb_score, float imdb_votes, float tmdb_popularity, float tmdb_score ) {
+	public ProgramaNetflix(String id, String titulo, String show_type, String descricao, int release_year, String age_certification, float runtime, String[] generos, String[] production_countries, float temporadas, String imdb_id, float imdb_score, float imdb_votes, float tmdb_popularity, float tmdb_score ) {
 		this.id = id;
 		this.titulo = titulo;
 		this.show_type = show_type;
