@@ -1,6 +1,6 @@
-public class AVL {
+public class AVL extends BinaryTree{
 	
-  private NoAVL raiz;
+  public NoAVL raiz;
   private int nElem;   // N�mero de elementos (n�s) na �rvore
 
   public AVL()  { raiz = null;  nElem=0; }
@@ -10,7 +10,9 @@ public class AVL {
     nElem = 1;
   }
 
-  public NoAVL getNoRaiz(){ return raiz; }
+  public NoAVL getNoRaiz(){ 
+	  return raiz; 
+  }
   
   private int calculaAlturaAVL(){
   	int cont = -1;
@@ -154,7 +156,7 @@ public void insereAVL(String k)
   setNElem( getNElem() + 1 );
 }
 
-private NoAVL insereNoAVL(NoAVL noAtual, String x )
+public NoAVL insereNoAVL(NoAVL noAtual, String x )
 {
   if (noAtual != null)
   {
